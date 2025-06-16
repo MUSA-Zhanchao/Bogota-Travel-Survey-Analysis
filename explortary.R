@@ -4,10 +4,10 @@ trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
 per <- readRDS("data/008-24 BBDD Procesamiento Personas.rds")
 
-per_complt <- per %>% 
+per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
-trips_complt<-trips %>% 
+trips_complt<-trips %>%
   left_join(hog,by="ID_Hogar")
 per_complt_87<-per_complt%>%
   select(P87)
