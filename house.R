@@ -5,15 +5,15 @@ trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
 per <- readRDS("data/008-24 BBDD Procesamiento Personas.rds")
 
-per_complt <- per %>%
+per_complt <- per %>% 
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P87"
-independent_variables <- c("P1", "P3", "P42",
-                           "P50", "P65_1", "P12", "P14",
+independent_variables <- c("P1", "P3", "P42", 
+                           "P50", "P65_1", "P12", "P14", 
                            "Edad", "P10", "P12", "P14", "P82", "P83", "P86")
 
-regressor<- per_complt %>%
+regressor<- per_complt %>% 
   select(all_of(dependent_variable), all_of(independent_variables))
 
 library(haven)
@@ -47,17 +47,34 @@ regressor<-regressor%>%
          )
 
 regressor$house <- as.factor(regressor$house)
-regressor$major_trans_2020<- as.factor(regressor$major_trans_2020)
 regressor$income<- as.factor(regressor$income)
 regressor$travel<- as.factor(regressor$travel)
 regressor$rent_own<- as.factor(regressor$rent_own)
-regressor$edu_att <- as.factor(regressor$edu_att)
 regressor$occupation <- as.factor(regressor$occupation)
 regressor$gender <- as.factor(regressor$gender)
-regressor$district <- as.factor(regressor$district)
 regressor$live_time <- as.factor(regressor$live_time)
 regressor$rent_cost <- as.factor(regressor$rent_cost)
 regressor$age <- as.factor(regressor$age)
+
+regressor$edu_att <- dplyr::case_when(
+  regressor$edu_att %in% c(1, 2, 3) ~ "Primary",
+  regressor$edu_att %in% c(4, 5) ~ "LowerSecondary",
+  regressor$edu_att %in% c(6, 7) ~ "UpperSecondary",
+  regressor$edu_att %in% c(8, 9) ~ "Technological",
+  regressor$edu_att %in% c(10, 11, 12, 13) ~ "University",
+  regressor$edu_att == 97 ~ "None",
+)
+regressor<-regressor %>%
+  mutate(major_trans_2020= case_when(
+    major_trans_2020 %in% c(1,2,3,4,5,6,10,16) ~ "public_tansit",
+    major_trans_2020 %in% c(7,8,9) ~ "informal",
+    major_trans_2020 %in% c(11,12) ~ "taxi",
+    major_trans_2020 %in% c(22,23) ~ "personal_veh",
+    major_trans_2020 %in% c(24,25) ~"motorcyle",
+    major_trans_2020 %in% c(25,27,28,17) ~ "bicycle",
+    major_trans_2020==34 ~ "walking",
+    TRUE ~ "other"
+))
 
 
 model_house<-multinom(P87~.,data=regressor)
