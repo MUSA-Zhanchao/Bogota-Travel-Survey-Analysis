@@ -428,5 +428,3 @@ kable(
     full_width        = FALSE
   )
 ```
-
-

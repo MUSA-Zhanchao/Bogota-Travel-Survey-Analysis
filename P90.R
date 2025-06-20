@@ -5,15 +5,15 @@ trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
 per <- readRDS("data/008-24 BBDD Procesamiento Personas.rds")
 
-per_complt <- per %>% 
+per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P90"
-independent_variables <- c("P1", "P3", "P42", 
-                           "P50", "P12", "P14", 
+independent_variables <- c("P1", "P3", "P42",
+                           "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
-regressor<- per_complt %>% 
+regressor<- per_complt %>%
   select(all_of(dependent_variable), all_of(independent_variables))
 
 library(haven)
@@ -144,4 +144,3 @@ summary(model_house)
 
 z<-summary(model_house)$coefficients/summary(model_house)$standard.errors
 p_values<- (1 - pnorm(abs(z), 0, 1)) * 2
-
