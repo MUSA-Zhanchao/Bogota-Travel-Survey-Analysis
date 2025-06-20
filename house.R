@@ -1,5 +1,6 @@
 library(tidyverse)
 library(nnet)
+library(haven)
 
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
@@ -16,7 +17,6 @@ independent_variables <- c("P1", "P3", "P42",
 regressor<- per_complt %>%
   select(all_of(dependent_variable), all_of(independent_variables))
 
-library(haven)
 
 regressor <- regressor %>%
   mutate(
