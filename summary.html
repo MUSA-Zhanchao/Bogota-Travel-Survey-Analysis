@@ -1664,34 +1664,34 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ef2929; } 
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.at { color: #204a87; } 
-code span.bn { color: #0000cf; } 
-code span.cf { color: #204a87; font-weight: bold; } 
-code span.ch { color: #4e9a06; } 
-code span.cn { color: #8f5902; } 
-code span.co { color: #8f5902; font-style: italic; } 
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.dt { color: #204a87; } 
-code span.dv { color: #0000cf; } 
-code span.er { color: #a40000; font-weight: bold; } 
-code span.ex { } 
-code span.fl { color: #0000cf; } 
-code span.fu { color: #204a87; font-weight: bold; } 
-code span.im { } 
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.kw { color: #204a87; font-weight: bold; } 
-code span.op { color: #ce5c00; font-weight: bold; } 
-code span.ot { color: #8f5902; } 
-code span.pp { color: #8f5902; font-style: italic; } 
-code span.sc { color: #ce5c00; font-weight: bold; } 
-code span.ss { color: #4e9a06; } 
-code span.st { color: #4e9a06; } 
-code span.va { color: #000000; } 
-code span.vs { color: #4e9a06; } 
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.al { color: #ef2929; }
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.at { color: #204a87; }
+code span.bn { color: #0000cf; }
+code span.cf { color: #204a87; font-weight: bold; }
+code span.ch { color: #4e9a06; }
+code span.cn { color: #8f5902; }
+code span.co { color: #8f5902; font-style: italic; }
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.dt { color: #204a87; }
+code span.dv { color: #0000cf; }
+code span.er { color: #a40000; font-weight: bold; }
+code span.ex { }
+code span.fl { color: #0000cf; }
+code span.fu { color: #204a87; font-weight: bold; }
+code span.im { }
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.kw { color: #204a87; font-weight: bold; }
+code span.op { color: #ce5c00; font-weight: bold; }
+code span.ot { color: #8f5902; }
+code span.pp { color: #8f5902; font-style: italic; }
+code span.sc { color: #ce5c00; font-weight: bold; }
+code span.ss { color: #4e9a06; }
+code span.st { color: #4e9a06; }
+code span.va { color: #000000; }
+code span.vs { color: #4e9a06; }
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; }
 .sourceCode .row {
 width: 100%;
 }
@@ -2059,7 +2059,7 @@ Survey</h1>
 <span id="cb1-138"><a href="#cb1-138" tabindex="-1"></a></span>
 <span id="cb1-139"><a href="#cb1-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P87<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 918.528906
 ## iter  20 value 883.379048
 ## iter  30 value 879.161367
@@ -2068,7 +2068,7 @@ Survey</h1>
 ## iter  60 value 876.169041
 ## iter  70 value 876.147905
 ## iter  80 value 876.143059
-## final  value 876.143029 
+## final  value 876.143029
 ## converged</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -4004,7 +4004,7 @@ live_timeshort
 <span id="cb4-138"><a href="#cb4-138" tabindex="-1"></a></span>
 <span id="cb4-139"><a href="#cb4-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P90<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1301.697752
 ## iter  20 value 1282.250860
 ## iter  30 value 1280.230107
@@ -4013,7 +4013,7 @@ live_timeshort
 ## iter  60 value 1279.579689
 ## iter  70 value 1279.535157
 ## iter  80 value 1279.525264
-## final  value 1279.524889 
+## final  value 1279.524889
 ## converged</code></pre>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
