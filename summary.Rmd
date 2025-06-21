@@ -27,6 +27,14 @@ library(kableExtra)
 
 # P87: Multinomial Regression
 
+### Question: 
+**"How do you think the value of the housing or rent in which you live will change after the inauguration of the First and Second Line of the Bogotá Metro?"**
+
+### Potential Answer:
+- 1: Will increase
+- 2: Will not change
+- 3: Will decrease
+
 ```{r}
 
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
@@ -228,7 +236,17 @@ kable(
 ```
 
 
-# P90: multinomial regression
+# P90: Multinomial Regression
+
+### Question: 
+We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements: 
+
+**Safety in the neighborhood.**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
 
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
@@ -428,7 +446,17 @@ kable(
     full_width        = FALSE
   )
 ```
+
 # P91: multinomial regression
+
+### Question:
+
+**Statement : Cost of living in the neighborhood.**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
 
 ```{r, warning= FALSE}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
@@ -631,6 +659,16 @@ kable(
 
 # P92: multinomial regression
 
+### Question:
+
+**Statement: Local commerce (formal and informal).**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
+
+
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
@@ -831,6 +869,15 @@ kable(
 ```
 
 # P95: Multinomial regression
+
+### Question:
+
+**Statement: Satisfaction with public transportation.**
+
+### Potential Answers:
+- 1: will be increased
+- 2: will be maintained
+- 3: will be decreased
 
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
@@ -1033,6 +1080,16 @@ kable(
 
 # P96: multinomial regression
 
+### Question:
+
+**Statement: Travel time/commute to your most frequent travel destination.**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
+
+
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
@@ -1233,6 +1290,16 @@ kable(
 ```
 
 # P98: multinomial regression
+
+### Question:
+
+**Statement: Hearing pollution**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
+
 
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
@@ -1435,6 +1502,15 @@ kable(
 
 # P100: multinomial regression
 
+### Question:
+
+**Statement: Public spaces (sidewalks, green areas, parks)**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
+
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
 hog <- readRDS("data/008-24 BBDD Procesamiento Hogares.rds")
@@ -1635,6 +1711,15 @@ kable(
 ```
 
 # P101: multinomial regression
+
+### Question:
+
+**Statement: New housing projects**
+
+### Potential Answers:
+- 1: It will increase
+- 2: Will be maintained
+- 3: It will decrease
 
 ```{r}
 trips <- readRDS("data/008-24 BBDD Procesamiento Etapas.rds")
