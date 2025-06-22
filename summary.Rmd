@@ -32,7 +32,7 @@ Multinomial regression is a statistical technique used to model the relationship
 
 The multinomial regression is the extension of binary logistic regression modeling categorical outcomes with more than two unordered categories. Rather than predicting a single probability as in logistic regression, it predicts a set of probabilities- one for each possible category of the dependent variable. The interpretation of the coefficients (**β**) is the change in log-odds of choosing category j over the baseline for a one-unit increase in predictor Xi, while holding all other variables constant.
 
-Since P87-P101 consists of three categorical responses, “increase”, “not expected to see change”, and “expected to decrease”. The multinomial regression is suitable for determining the relationship between individuals' expectations and specific socio-economic predictors. The category of “not expected to see change” is used as the dependent variable baseline category. 
+Since P87-P101 consists of three categorical responses, “increase”, “not expected to see change”, and “expected to decrease”. The multinomial regression is suitable for determining the relationship between individuals' expectations and specific socio-economic predictors. The category of “not expected to see change” is used as the dependent variable baseline category.
 
 ## Formula
 
@@ -77,10 +77,10 @@ $$
 
 where:
 
-- \(Y\) is the categorical outcome variable, 
-- \(X\) is the vector of predictors, 
+- \(Y\) is the categorical outcome variable,
+- \(X\) is the vector of predictors,
 - \(\beta_{0j}\) is the intercept for category \(j\)
-- \(\beta_j\) is the vector of coefficients for category \(j\). 
+- \(\beta_j\) is the vector of coefficients for category \(j\).
 - The reference category (baseline) is denoted as \(Y = 0\).
 
 $$
@@ -97,26 +97,26 @@ where:
 ## Key Assumptions
 There are three key assumptions for multinomial regression:
 
-- **Independence of Irrelevant Alternatives (IIA)**: the odds between any two outcome categories do not depend on other alternatives. For example, the odds of people choosing to see increase or are influenced by options like “not change” and “decrease” present. 
-- **Independence observations**: We assume each individual person in our cases responded to the survey directly without being influenced by others who took the survey. 
-- **No perfect multicollinearity** among predictors 
+- **Independence of Irrelevant Alternatives (IIA)**: the odds between any two outcome categories do not depend on other alternatives. For example, the odds of people choosing to see increase or are influenced by options like “not change” and “decrease” present.
+- **Independence observations**: We assume each individual person in our cases responded to the survey directly without being influenced by others who took the survey.
+- **No perfect multicollinearity** among predictors
 
 ## Sample Interpretation
 
-- The log-odds of responding “increase” (or “decrease”) vs “not change” are beta coefficient higher for categories one compared to reference categories. 
-- **Exponentiating (odd ratio)**: category one has `exp (β) - 1` percentage higher odds of choosing “increase” over not change compared to reference categories. 
+- The log-odds of responding “increase” (or “decrease”) vs “not change” are beta coefficient higher for categories one compared to reference categories.
+- **Exponentiating (odd ratio)**: category one has `exp (β) - 1` percentage higher odds of choosing “increase” over not change compared to reference categories.
 
-## Predictors 
+## Predictors
 
-All the predictors were treated as factors and regrouped to eliminate small sample categories. The specific variable, regrouping process, and reference category are listed below.  
+All the predictors were treated as factors and regrouped to eliminate small sample categories. The specific variable, regrouping process, and reference category are listed below.
 
-- Housing type (`P1`): 1- House, 2- Apartment, 3- Room in tenement, 4- other type of housing; *Other type of housing (4) was used as reference category.* 
-- Rent and Own (`P82`): 1 - Own, 2 - Rent; *Own was used as the reference category.*  
-- Gender (`P10`): 1 – female, 2 – male; *Female was used as the reference category.* 
-- Educational attainment (`P12`) with **recategorization**: Primary – primary school or lower, LowerSecondary -Junior high school complete, UpperSecondary – Senior high school complete (10th and 11th grades), Technological – technician/technological complete, University- University degree or higher; *Reference category: Upper secondary (high school complete)* 
-- Major Transportation mode before COVID-19 (`P42`) with **recategorization**: Public transit - including all buses (public), informal (private bus), taxi, driving, motorcycle, bike, walking, and others; *Reference category: other*  
-- Occupation (`P13`) with **recategorization**: student – include preschool, employed, self-employed, informal, NA, Others; *Reference category: other-employed* 
-- Income (`P50`) with **recategorization**: low- under 1,160, lower-mid – 1,161-2,500, upper-mid – 2,501 – 4,900, high – over 4,901; other (not answer); *Reference category: other*  
+- Housing type (`P1`): 1- House, 2- Apartment, 3- Room in tenement, 4- other type of housing; *Other type of housing (4) was used as reference category.*
+- Rent and Own (`P82`): 1 - Own, 2 - Rent; *Own was used as the reference category.*
+- Gender (`P10`): 1 – female, 2 – male; *Female was used as the reference category.*
+- Educational attainment (`P12`) with **recategorization**: Primary – primary school or lower, LowerSecondary -Junior high school complete, UpperSecondary – Senior high school complete (10th and 11th grades), Technological – technician/technological complete, University- University degree or higher; *Reference category: Upper secondary (high school complete)*
+- Major Transportation mode before COVID-19 (`P42`) with **recategorization**: Public transit - including all buses (public), informal (private bus), taxi, driving, motorcycle, bike, walking, and others; *Reference category: other*
+- Occupation (`P13`) with **recategorization**: student – include preschool, employed, self-employed, informal, NA, Others; *Reference category: other-employed*
+- Income (`P50`) with **recategorization**: low- under 1,160, lower-mid – 1,161-2,500, upper-mid – 2,501 – 4,900, high – over 4,901; other (not answer); *Reference category: other*
 - Live time (`P83`) with **recategorization**: short – less than or equal to 5 years, medium - More than 5 or less than or equal to 15 years, long – More than 15 years. *Reference category: medium *
 - Age (`Edad`) with **recategorization**: under 18 years, 3,4,5,6,7 (without further recategorize) .*Reference category: 3*
 
@@ -125,7 +125,7 @@ All the predictors were treated as factors and regrouped to eliminate small samp
 
 ## P87: Multinomial Regression
 
-### Question: 
+### Question:
 **"How do you think the value of the housing or rent in which you live will change after the inauguration of the First and Second Line of the Bogotá Metro?"**
 
 ### Potential Answer:
@@ -336,8 +336,8 @@ kable(
 
 ## P90: Multinomial Regression
 
-### Question: 
-We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements: 
+### Question:
+We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements:
 
 **Safety in the neighborhood.**
 
