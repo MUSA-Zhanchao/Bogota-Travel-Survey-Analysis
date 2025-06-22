@@ -1,4 +1,4 @@
-# Bogota Travel Survey Analysis: Multinomial Regression
+# Bogotá Travel Survey Analysis: Multinomial Regression
 Zhanchao Yang
 
 ## Introduction & Research Questions
