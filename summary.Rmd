@@ -143,7 +143,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P87"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -162,8 +162,7 @@ regressor$P87 <- as.factor(regressor$P87)
 regressor$P87<-relevel(regressor$P87, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -177,8 +176,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -355,7 +353,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P90"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -374,8 +372,7 @@ regressor$P90 <- as.factor(regressor$P90)
 regressor$P90<-relevel(regressor$P90, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -389,8 +386,6 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -565,7 +560,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P91"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -584,8 +579,7 @@ regressor$P91 <- as.factor(regressor$P91)
 regressor$P91<-relevel(regressor$P91, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -599,8 +593,6 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -776,7 +768,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P92"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -795,8 +787,7 @@ regressor$P92 <- as.factor(regressor$P92)
 regressor$P92<-relevel(regressor$P92, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -810,8 +801,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -986,7 +976,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P95"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -1005,8 +995,7 @@ regressor$P95 <- as.factor(regressor$P95)
 regressor$P95 <- relevel(regressor$P95, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -1020,8 +1009,6 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -1197,7 +1184,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P96"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -1216,8 +1203,7 @@ regressor$P96 <- as.factor(regressor$P96)
 regressor$P96 <- relevel(regressor$P96, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -1231,8 +1217,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -1408,7 +1393,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P98"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -1427,8 +1412,7 @@ regressor$P98 <- as.factor(regressor$P98)
 regressor$P98 <- relevel(regressor$P98, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -1442,8 +1426,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -1618,7 +1601,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P100"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -1637,7 +1620,7 @@ regressor$P100 <- as.factor(regressor$P100)
 regressor$P100 <- relevel(regressor$P100, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
+  rename(
          pop_num=P3,
          major_trans_2020=P42,
          income= P50,
@@ -1652,8 +1635,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
@@ -1828,7 +1810,7 @@ per_complt <- per %>%
   left_join(hog,by="ID_Hogar")
 
 dependent_variable<- "P101"
-independent_variables <- c("P1", "P3", "P42",
+independent_variables <- c("P3", "P42",
                            "P50", "P12", "P14",
                            "Edad", "P10", "P12","P13","P15", "P14", "P82", "P83")
 
@@ -1847,8 +1829,7 @@ regressor$P101 <- as.factor(regressor$P101)
 regressor$P101 <- relevel(regressor$P101, ref = "2") # Relevel to set the reference category
 
 regressor<-regressor%>%
-  rename(house=P1,
-         pop_num=P3,
+  rename(pop_num=P3,
          major_trans_2020=P42,
          income= P50,
          rent_own= P82,
@@ -1862,8 +1843,7 @@ regressor<-regressor%>%
          age= Edad
          )
 
-regressor$house <- as.factor(regressor$house)
-regressor$house<- relevel(regressor$house, ref = "4") # Relevel to set the reference category
+
 regressor$rent_own<- as.factor(regressor$rent_own) # own =1, rent =2
 regressor$rent_own <- relevel(regressor$rent_own, ref = "1") # Relevel to set the reference category
 regressor$gender <- as.factor(regressor$gender) #female =1, male=2
