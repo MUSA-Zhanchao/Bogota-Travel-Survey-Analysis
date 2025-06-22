@@ -27,7 +27,7 @@ library(kableExtra)
 
 # P87: Multinomial Regression
 
-### Question: 
+### Question:
 **"How do you think the value of the housing or rent in which you live will change after the inauguration of the First and Second Line of the Bogotá Metro?"**
 
 ### Potential Answer:
@@ -238,8 +238,8 @@ kable(
 
 # P90: Multinomial Regression
 
-### Question: 
-We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements: 
+### Question:
+We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements:
 
 **Safety in the neighborhood.**
 
