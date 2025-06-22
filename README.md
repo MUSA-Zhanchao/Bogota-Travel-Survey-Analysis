@@ -11,10 +11,9 @@ This study examines these perceptions across various segments of Bogotá’s pop
 2. Which population groups anticipate the most significant environmental benefits—or drawbacks—from the metro, and what factors underlie these expectations?
 3. How do perceptions of the metro’s socio-economic impacts (such as changes in employment opportunities, property values, and social inclusion) vary among distinct community profiles?
 
-By illuminating the perceptions held by various communities, we aim to inform both policy adjustments and communication strategies that will maximize public support and ensure that Bogotá’s metro delivers on its promise of cleaner, more equitable urban mobility. 
+By illuminating the perceptions held by various communities, we aim to inform both policy adjustments and communication strategies that will maximize public support and ensure that Bogotá’s metro delivers on its promise of cleaner, more equitable urban mobility.
 
 ## Method
 
 ### Multinomial Regression
 Multinomial regression is an extension of binary logistic regression for modeling a categorical outcome with more than two nominal (i.e., unordered) categories. Rather than predicting a single probability (as in binary logistic), it predicts a set of probabilities—one for each possible category of the dependent variable—such that they sum to 1.
-

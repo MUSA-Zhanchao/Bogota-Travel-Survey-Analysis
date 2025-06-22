@@ -1664,34 +1664,34 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ef2929; } 
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.at { color: #204a87; } 
-code span.bn { color: #0000cf; } 
-code span.cf { color: #204a87; font-weight: bold; } 
-code span.ch { color: #4e9a06; } 
-code span.cn { color: #8f5902; } 
-code span.co { color: #8f5902; font-style: italic; } 
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.dt { color: #204a87; } 
-code span.dv { color: #0000cf; } 
-code span.er { color: #a40000; font-weight: bold; } 
-code span.ex { } 
-code span.fl { color: #0000cf; } 
-code span.fu { color: #204a87; font-weight: bold; } 
-code span.im { } 
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } 
-code span.kw { color: #204a87; font-weight: bold; } 
-code span.op { color: #ce5c00; font-weight: bold; } 
-code span.ot { color: #8f5902; } 
-code span.pp { color: #8f5902; font-style: italic; } 
-code span.sc { color: #ce5c00; font-weight: bold; } 
-code span.ss { color: #4e9a06; } 
-code span.st { color: #4e9a06; } 
-code span.va { color: #000000; } 
-code span.vs { color: #4e9a06; } 
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } 
+code span.al { color: #ef2929; }
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.at { color: #204a87; }
+code span.bn { color: #0000cf; }
+code span.cf { color: #204a87; font-weight: bold; }
+code span.ch { color: #4e9a06; }
+code span.cn { color: #8f5902; }
+code span.co { color: #8f5902; font-style: italic; }
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.dt { color: #204a87; }
+code span.dv { color: #0000cf; }
+code span.er { color: #a40000; font-weight: bold; }
+code span.ex { }
+code span.fl { color: #0000cf; }
+code span.fu { color: #204a87; font-weight: bold; }
+code span.im { }
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; }
+code span.kw { color: #204a87; font-weight: bold; }
+code span.op { color: #ce5c00; font-weight: bold; }
+code span.ot { color: #8f5902; }
+code span.pp { color: #8f5902; font-style: italic; }
+code span.sc { color: #ce5c00; font-weight: bold; }
+code span.ss { color: #4e9a06; }
+code span.st { color: #4e9a06; }
+code span.va { color: #000000; }
+code span.vs { color: #4e9a06; }
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; }
 .sourceCode .row {
 width: 100%;
 }
@@ -2072,7 +2072,7 @@ of the Bogotá Metro?”</strong></p>
 <span id="cb1-138"><a href="#cb1-138" tabindex="-1"></a></span>
 <span id="cb1-139"><a href="#cb1-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P87<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 918.528906
 ## iter  20 value 883.379048
 ## iter  30 value 879.161367
@@ -2081,7 +2081,7 @@ of the Bogotá Metro?”</strong></p>
 ## iter  60 value 876.169041
 ## iter  70 value 876.147905
 ## iter  80 value 876.143059
-## final  value 876.143029 
+## final  value 876.143029
 ## converged</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -4033,7 +4033,7 @@ statements:</p>
 <span id="cb4-138"><a href="#cb4-138" tabindex="-1"></a></span>
 <span id="cb4-139"><a href="#cb4-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P90<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1301.697752
 ## iter  20 value 1282.250860
 ## iter  30 value 1280.230107
@@ -4042,7 +4042,7 @@ statements:</p>
 ## iter  60 value 1279.579689
 ## iter  70 value 1279.535157
 ## iter  80 value 1279.525264
-## final  value 1279.524889 
+## final  value 1279.524889
 ## converged</code></pre>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -5990,7 +5990,7 @@ live_timeshort
 <span id="cb7-138"><a href="#cb7-138" tabindex="-1"></a></span>
 <span id="cb7-139"><a href="#cb7-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P91<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 949.333045
 ## iter  20 value 886.795625
 ## iter  30 value 883.626830
@@ -5999,7 +5999,7 @@ live_timeshort
 ## iter  60 value 882.423759
 ## iter  70 value 882.357313
 ## iter  80 value 882.342840
-## final  value 882.342769 
+## final  value 882.342769
 ## converged</code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -7947,7 +7947,7 @@ live_timeshort
 <span id="cb10-138"><a href="#cb10-138" tabindex="-1"></a></span>
 <span id="cb10-139"><a href="#cb10-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P92<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1154.768704
 ## iter  20 value 1087.714101
 ## iter  30 value 1075.518785
@@ -7956,7 +7956,7 @@ live_timeshort
 ## iter  60 value 1072.798671
 ## iter  70 value 1072.756532
 ## iter  80 value 1072.753003
-## final  value 1072.752978 
+## final  value 1072.752978
 ## converged</code></pre>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -9905,7 +9905,7 @@ transportation.</strong></p>
 <span id="cb13-138"><a href="#cb13-138" tabindex="-1"></a></span>
 <span id="cb13-139"><a href="#cb13-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P95<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1300.544580
 ## iter  20 value 1232.620194
 ## iter  30 value 1227.286149
@@ -9914,7 +9914,7 @@ transportation.</strong></p>
 ## iter  60 value 1225.953600
 ## iter  70 value 1225.865432
 ## iter  80 value 1225.854513
-## final  value 1225.853959 
+## final  value 1225.853959
 ## converged</code></pre>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -11863,7 +11863,7 @@ destination.</strong></p>
 <span id="cb16-138"><a href="#cb16-138" tabindex="-1"></a></span>
 <span id="cb16-139"><a href="#cb16-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P96<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1293.614567
 ## iter  20 value 1252.994689
 ## iter  30 value 1249.851494
@@ -11872,7 +11872,7 @@ destination.</strong></p>
 ## iter  60 value 1248.929067
 ## iter  70 value 1248.873468
 ## iter  80 value 1248.864881
-## final  value 1248.864599 
+## final  value 1248.864599
 ## converged</code></pre>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb18-2"><a href="#cb18-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -13820,7 +13820,7 @@ live_timeshort
 <span id="cb19-138"><a href="#cb19-138" tabindex="-1"></a></span>
 <span id="cb19-139"><a href="#cb19-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P98<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1290.319672
 ## iter  20 value 1247.291445
 ## iter  30 value 1242.200796
@@ -13829,7 +13829,7 @@ live_timeshort
 ## iter  60 value 1240.788768
 ## iter  70 value 1240.656545
 ## iter  80 value 1240.628858
-## final  value 1240.628229 
+## final  value 1240.628229
 ## converged</code></pre>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb21-2"><a href="#cb21-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -15778,7 +15778,7 @@ parks)</strong></p>
 <span id="cb22-138"><a href="#cb22-138" tabindex="-1"></a></span>
 <span id="cb22-139"><a href="#cb22-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P100<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1313.242342
 ## iter  20 value 1291.093763
 ## iter  30 value 1287.214217
@@ -15787,7 +15787,7 @@ parks)</strong></p>
 ## iter  60 value 1283.417303
 ## iter  70 value 1283.354719
 ## iter  80 value 1283.342778
-## final  value 1283.342177 
+## final  value 1283.342177
 ## converged</code></pre>
 <div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
@@ -17735,7 +17735,7 @@ live_timeshort
 <span id="cb25-138"><a href="#cb25-138" tabindex="-1"></a></span>
 <span id="cb25-139"><a href="#cb25-139" tabindex="-1"></a>model_house<span class="ot">&lt;-</span><span class="fu">multinom</span>(P101<span class="sc">~</span>.,<span class="at">data=</span>regressor)</span></code></pre></div>
 <pre><code>## # weights:  114 (74 variable)
-## initial  value 1418.308465 
+## initial  value 1418.308465
 ## iter  10 value 1201.288764
 ## iter  20 value 1129.640472
 ## iter  30 value 1122.669647
@@ -17744,7 +17744,7 @@ live_timeshort
 ## iter  60 value 1121.524666
 ## iter  70 value 1121.487924
 ## iter  80 value 1121.483856
-## final  value 1121.483795 
+## final  value 1121.483795
 ## converged</code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" tabindex="-1"></a>z<span class="ot">&lt;-</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>coefficients<span class="sc">/</span><span class="fu">summary</span>(model_house)<span class="sc">$</span>standard.errors</span>
 <span id="cb27-2"><a href="#cb27-2" tabindex="-1"></a>p_values<span class="ot">&lt;-</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z), <span class="dv">0</span>, <span class="dv">1</span>)) <span class="sc">*</span> <span class="dv">2</span></span>
