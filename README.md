@@ -116,7 +116,7 @@ Since the primary purpose of the model is to identify different characteristics 
 - P-values indicate the specific category is not statistics significant (greater than 0.05)
 - The sample size of the specific category is less than 30, which is too small to draw any conclusion.
 - A coefficient this large often indicates near–perfect separation: in your data, whenever `X = k`, you almost never (or never) observe the baseline outcome. **It almost always signals (quasi-)perfect separation or very sparse data, so you’ll want to inspect your frequency tables and perhaps apply a regularization or category‐collapsing strategy.**
-- **Meaningless categories**: such as **NA**, etc. 
+- **Meaningless categories**: such as **NA**, etc.
 
 # Results
 
