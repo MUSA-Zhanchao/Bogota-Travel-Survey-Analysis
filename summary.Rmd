@@ -576,6 +576,25 @@ kable(
 
 ### Results
 
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- **personal vehicle** (`P42`): People who use personal vehicle as their major transportation mode before 2020 have 64% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **public transit** (`P42`): People who use public transit as their major transportation mode before 2020 have 36% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 59.8% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **walk** (`P42`): People who walk as their major transportation mode before 2020 have 55.9% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income_high** (`P50`): People with high income have 2.9 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. (*highly significant, may cause by unproper reference or small sample size*)
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **personal vehicle** (`P42`): People who use personal vehicle as their major transportation mode before 2020 have 75.3% lower odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant. (*Since both "decrease" and "increased" are negative, this means that people who use personal vehicle as their major transportation mode before 2020 are likely to choose "not change" than change compared to people who use other transportation modes. further reference category need to choose to further examine the hypothesis*)
+-**walking** (`P42`): People who walk as their major transportation mode before 2020 have 59.8% lower odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.(Note: similar to personal vehicle).
+- **income_high** (`P50`): People with high income have 2.39 times higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant. (*same direction than previous*)
+- **income_low** (`P50`): People with low income have 55.9% lower odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant. (*highly significant, may cause by unproper reference or small sample size*)
+- **edu_lower secondary** (`P12`): People with lower secondary education have 53% lower odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant. 
+- **edu_primary** (`P12`): People with primary education have 51.7% lower odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant. 
+- **occupation -employed** (`P14`): People who are employed (formal job) have 47.2% lower odds of choosing "decrease" than "not change" compared to people who are unemployed, with holding other variables constant. 
+- **age_under 18** (`Edad`): People who are under 18 years old have 1.7 times higher odds of choosing "decrease" than "not change" compared to people who are over 65 years old, with holding other variables constant. (*data structure uncertain*)
+
 
 ## P91: Cost of living
 
@@ -786,6 +805,19 @@ kable(
 
 ### Results
 
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- **public transit** (`P42`): People who use public transit as their major transportation mode before 2020 have 52.5% higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **personal vehicle** (`P42`): People who use personal vehicle as their major transportation mode before 2020 have 50% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 84% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income high** (`P50`): People with high income have 6 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. (*highly significant, may cause by unproper reference or small sample size*)
+- **income low-mid** (`P50`): People with low-mid income have 94.8% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. 
+- **income upper-mid** (`P50`): People with upper-mid income have 80.5% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **live time long** (`P83`): People who have lived in their current home for a long time have 53.9% higher odds of choosing "increase" than "not change" compared to people who have lived in their current home for a medium time, with holding other variables constant.
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **income upper-mid** (`P50`): People with upper-mid income have 86.2% lower odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant. 
 
 ## P92: Local commerce
 
@@ -995,6 +1027,11 @@ kable(
     full_width        = FALSE
   )
 ```
+
+### Results
+
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
 
 ## P95: Satisfaction with public transportation
 
