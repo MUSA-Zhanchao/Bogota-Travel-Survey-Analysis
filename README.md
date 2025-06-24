@@ -105,7 +105,7 @@ All the predictors were treated as factors and regrouped to eliminate small samp
 
 ## Inclusive and Exclusive Criteria
 
-Since the primary purpose of the model is to identify different characteristics of people who have different expectations about the impact of the Bogotá Metro, we will use the following criteria to determine which predictors to include in the model (**explortary analysis rather than make prediction**):
+Since the primary purpose of the model is to identify different characteristics of people who have different expectations about the impact of the Bogotá Metro, we will use the following criteria to determine which predictors to include in the model (**exploratory analysis rather than make prediction**):
 
 **Inclusive Criteria**:
 
