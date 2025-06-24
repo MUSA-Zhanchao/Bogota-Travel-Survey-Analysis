@@ -149,22 +149,6 @@ Since all **housing type** (P1) are statistically significant, we will not inclu
 - 2: Will not change
 - 3: Will decrease
 
-### Results
-
-**significant factor (variables) in choice one (increase) vs choice two (not change)**:
-
-- **population number** (`P3`): For every one additional person in household, the odds responding "increase" rather than "not change" are 0.824 times greater -- or in other words, the odds of responding "increase" than "no change" **decrease by 17.6% for every additional person in the household,** with holding other variables constant. 
-*For every 1 additional person in household, the log-odds of responding "increase" rather than "not change" increase by 0.4, with holding other variables constant.*
-- **educational attainment_technology** (`P12`):
-- **income_high** (`P50`):
-- **major_transportation_mode before 2020_walk** (`P42`):
-- **age_under18** (`Edad`):
-- **rent_own_2** (`P82`): The log-odds of responding "increase" rather than "not change" are 0.432 lower for people who rent than those who own their home, with holding other variables constant. In other words, **renter have 35.1% lower odds of choosing "increase" than "not change" compared to people who own their home, with holding other variables constant.**
-- **live_time_long** (`P83`):
-
-**significant factor (variables) in choice three (decrease) vs choice two (not change)**:
-- income_low (P50):
-
 
 ```{r}
 
@@ -364,6 +348,23 @@ kable(
   )
 ```
 
+### Results
+
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- **population number** (`P3`): For every one additional person in household, the odds responding "increase" rather than "not change" are 0.824 times greater -- or in other words, the odds of responding "increase" than "no change" **decrease by 17.6% for every additional person in the household,** with holding other variables constant. 
+*For every 1 additional person in household, the log-odds of responding "increase" rather than "not change" increase by 0.4, with holding other variables constant.*
+- **educational attainment_technology** (`P12`): The log-odds of responding "increase" rather than "not change" are 0.58 higher for people with a technological education compared to those with upper secondary education, with holding other variables constant. In other words, **people with a technological education have 78.6% higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.**
+- **income_high** (`P50`): The log-odds of responding "increase" rather than "not change" are 0.65 lower for people with high income compared to those with not report their income, with holding other variables constant. In other words, **people with high income have 47.8% lower odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.**
+- **major_transportation_mode before 2020_walk** (`P42`): The log-odds of responding "increase" rather than "not change" are 0.622 higher for people who walk as their major transportation mode before 2020 compared to those who use other transportation modes (not major), with holding other variables constant. In other words, **people who walk as their major transportation mode before 2020 have 86.2% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.**
+- **age_under18** (`Edad`): Although the young population is also statistically significant, I am hesitate to include this as reliable predictors since we join the person data to household data, if household answer they prefer the choice metro is make the housing value higher, then their kids corresponding results share the same way. It's not meaningful as the data nature of children do not answer this question individually.**Question: should we suggests that family with young kids tend to prefer the statement that the metro will increase the housing value?**
+- **rent_own_2** (`P82`): The log-odds of responding "increase" rather than "not change" are 0.432 lower for people who rent than those who own their home, with holding other variables constant. In other words, **renter have 35.1% lower odds of choosing "increase" than "not change" compared to people who own their home, with holding other variables constant.**
+- **live_time_long** (`P83`): The log-odds of responding "increase" rather than "not change" are 0.414 higher for people who have lived in their current home for a long time compared to those who have lived in their current home for a medium time, with holding other variables constant. In other words, **people who have lived in their current home for a long time have 51.2% higher odds of choosing "increase" than "not change" compared to people who have lived in their current home for a medium time, with holding other variables constant.**
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **income_low** (`P50`): The log-odds of responding "decrease" rather than "not change" are 2.109 higher for people with low income compared to those with not report their income, with holding other variables constant. In other words, **people with low income have 724% higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.**  (*Potential concerning as the log-odds is very high, indicating that the sample size of this category is too small to draw any conclusion.*)
+- **live_time_long** (`P83`): The log-odds of responding "decrease" rather than "not change" are 1.099 lower for people who have lived in their current home for a long time compared to those who have lived in their current home for a medium time, with holding other variables constant. In other words, **people who have lived in their current home for a long time have 66.7% lower odds of choosing "decrease" than "not change" compared to people who have lived in their current home for a medium time, with holding other variables constant.**
 
 ## P90: Multinomial Regression
 
