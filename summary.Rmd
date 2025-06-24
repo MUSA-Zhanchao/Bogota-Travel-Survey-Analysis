@@ -1033,7 +1033,7 @@ kable(
 #### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
 
 - **motorcycle** (`P42`): People who use motorcycle as their major transportation mode before 2020 have 1.9 times higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
-- **income-high** (`P50`): People with high income have 2.24 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. 
+- **income-high** (`P50`): People with high income have 2.24 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
 - **income-upper-mid** (`P50`): People with upper-mid income have 67.6% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
 - **income-lower-mid** (`P50`): People with lower-mid income have 36.6% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. (*Note: p_values =0.077, not met threshold but close enough*)
 - **income-low** (`P50`): People with low income have 52.1% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
@@ -1716,6 +1716,25 @@ kable(
 
 #### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
 
+- **motorcycle** (`P42`): People who use motorcycle as their major transportation mode before 2020 have 1.035 times higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 56.5% higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-high** (`P50`): People with high income have 17.64 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant. (*highly significant, may cause by perfect sample*)
+- **income-low** (`P50`): People with low income have 75.8% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **income-lower-mid** (`P50`): People with lower-mid income have 1.187 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **income-upper-mid** (`P50`): People with upper-mid income have 1.086 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-primary** (`P12`): People with primary education have 80% higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education-lower secondary** (`P12`): People with lower secondary education have 1.039 times higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education-technological** (`P12`): People with technological education have 1.533 times higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education-university** (`P12`): People with university education have 1.837 times higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **live time-long** (`P83`): People who live in the same place for a long time have 53.2% higher odds of choosing "increase" than "not change" compared to people who live in the same place for a medium time, with holding other variables constant.
+
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **income-high** (`P50`): People with high income have 25.625 times higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant. (*highly significant*, may cause by perfect sample)
+- **income-lower-mid** (`P50`): People with lower-mid income have 63.7% higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-lower-secondary** (`P12`): People with lower secondary education have 69.4% higher odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education- University** (`P12`): People with university education have 92.1% higher odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant.
 
 ## P100: Public spaces
 
@@ -1930,7 +1949,21 @@ kable(
 
 #### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
 
-- 
+- **bicycle** (`P42`): People who use bicycle as their major transportation mode before 2020 have 6.65 times higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 92.3% higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-lower-mid** (`P50`): People with lower-mid income have 67.6% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-University** (`P12`): People with University education have 80.9% higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **motorcycle** (`P42`): People who use motorcycle as their major transportation mode before 2020 have 52.7% lower odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 83.8% lower odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+**walking** (`P42`): People who walk as their major transportation mode before 2020 have 52.7% lower odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-low** (`P50`): People with low income have 36.8% lower odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-lower secondary** (`P12`): People with lower secondary education have 71.5% higher odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education-technological** (`P12`): People with technological education have 99% higher odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **education- university** (`P12`): People with University education have 1.246 times higher odds of choosing "decrease" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **age-under18** (`Edad`): People under 18 years old have 62.5% lower odds of choosing "decrease" than "not change" compared to people who are 18-24 years old, with holding other variables constant. (*Note: same issues*)
 
 
 ## P101: New housing projects
@@ -2177,3 +2210,10 @@ The second problem arises because I treated all predictor categories as unordere
 The last question is about whether multinomial regression is the greatest approach. The multinomial regression is ideal to predict an unordered categorical variable, but not an ordered categorical variable, because it uses one category (in this case, “unchanged” as baseline). The interpretation for the coefficient would be “The log-odds of responding 'increase' (or 'decrease') vs 'not change' are the beta coefficient higher for categories one compared to the reference categories.” Initially, I thought “Increase”, “unchanged”, and “decrease” as unordered categorical variables, simply meaning they are viewed as separate categories, disregarding the sequence here.
 
 The ordered categorical variable is similar to students’ grades, where A (90-100) is the highest, followed by B (80-90), C (70-80), and D (60-70). They are ordered categorical variables, but not numeric. Eugene doubted my approach to treating increases, unchanged, and decreases as unrelated. If we want to recover a trend rather than log likelihood, we will need to use a different regression model – the ordinal regression model. However, the multinomial regression results remain valid and may be helpful in the future.
+
+
+## potential future steps
+
+Considering changing the reference category, may be much useful coefficient (middle level)- average level of Bogota.
+
+Other thoughts to improve the model?
