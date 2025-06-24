@@ -17,10 +17,7 @@ By illuminating the perceptions held by various communities, we aim to inform bo
 
 ### What is Multinomial Regression?
 
-Multinomial regression is a statistical technique used to model the relationship between a categorical dependent variable with more than two levels and one or more independent variables. It is particularly useful when the outcome variable is nominal (i.e., categories without a natural order) and can be applied to survey data, such as the Bogotá Travel Survey.
-
-The multinomial regression is the extension of binary logistic regression modeling categorical outcomes with more than two unordered categories. Rather than predicting a single probability as in logistic regression, it predicts a set of probabilities- one for each possible category of the dependent variable. The interpretation of the coefficients (**β**) is the change in log-odds of choosing category j over the baseline for a one-unit increase in predictor Xi, while holding all other variables constant.
-
+Multinomial regression is a statistical technique used to model the relationship between a categorical dependent variable with more than two levels and one or more independent variables. It is an extension of binary logistic regression, designed for categorical outcomes with more than two unordered categories. Rather than predicting a single probability as in logistic regression, multinomial regression predicts a set of probabilities—one for each possible category of the dependent variable. The coefficients (**β**) represent the change in log-odds of choosing a specific category over the baseline for a one-unit increase in a predictor variable, while holding all other variables constant. This method is particularly useful for analyzing survey data, such as the Bogotá Travel Survey.
 Since P87-P101 consists of three categorical responses, “increase”, “not expected to see change”, and “expected to decrease”. The multinomial regression is suitable for determining the relationship between individuals' expectations and specific socio-economic predictors. The category of “not expected to see change” is used as the dependent variable baseline category.
 
 ## Formula
