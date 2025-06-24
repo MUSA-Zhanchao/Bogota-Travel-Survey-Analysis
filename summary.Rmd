@@ -133,7 +133,7 @@ Since the primary purpose of the model is to identify different characteristics 
 - P-values indicate the specific category is not statistics significant (greater than 0.05)
 - The sample size of the specific category is less than 30, which is too small to draw any conclusion.
 - A coefficient this large often indicates near–perfect separation: in your data, whenever `X = k`, you almost never (or never) observe the baseline outcome. **It almost always signals (quasi-)perfect separation or very sparse data, so you’ll want to inspect your frequency tables and perhaps apply a regularization or category‐collapsing strategy.**
-- **Meaningless categories**: such as **NA**, etc. 
+- **Meaningless categories**: such as **NA**, etc.
 
 # Results
 
@@ -352,7 +352,7 @@ kable(
 
 #### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
 
-- **population number** (`P3`): For every one additional person in household, the odds responding "increase" rather than "not change" are 0.824 times greater -- or in other words, the odds of responding "increase" than "no change" **decrease by 17.6% for every additional person in the household,** with holding other variables constant. 
+- **population number** (`P3`): For every one additional person in household, the odds responding "increase" rather than "not change" are 0.824 times greater -- or in other words, the odds of responding "increase" than "no change" **decrease by 17.6% for every additional person in the household,** with holding other variables constant.
 *For every 1 additional person in household, the log-odds of responding "increase" rather than "not change" increase by 0.4, with holding other variables constant.*
 - **educational attainment_technology** (`P12`): The log-odds of responding "increase" rather than "not change" are 0.58 higher for people with a technological education compared to those with upper secondary education, with holding other variables constant. In other words, **people with a technological education have 78.6% higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.**
 - **income_high** (`P50`): The log-odds of responding "increase" rather than "not change" are 0.65 lower for people with high income compared to those with not report their income, with holding other variables constant. In other words, **people with high income have 47.8% lower odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.**
@@ -2035,16 +2035,16 @@ kable(
 
 # Limitation and Questions
 
-## The first question: 
+## The first question:
 
 If the majority of the people prefer one answer to the question, specifically, then this predictor is not statistically significant. (For P87, whether people think the housing values or rent would increase, if the majority of people, regardless of the type of house they live in, all think the housing price would rise, then the housing type predictor is not a great predictor.) Here, I want to get a sense of whether this question is more subjective or objective. However, I did identify some key factors that affect people’s responses. Understanding the nature of the question would help determine whether I should further explore the unreliable predictors or leave them as they are.
 
 
-## The second question: 
+## The second question:
 The second problem arises because I treated all predictor categories as unordered factors. From a statistical perspective, it can only interpret the results as indicating that one specific group of the answers (e.g., people with a university degree or higher) tends to be more optimistic than the reference group (e.g., people with primary school degrees). Still, it does not necessarily prove that people with higher degrees are more likely to be optimistic as well, because the statistics may show that those with secondary degrees may be less confident than those with higher degrees. To identify a trend, we may want to try a different approach to handle the predictors. Please let me know what you think. Thanks.
 
 
-## Last question: 
+## Last question:
 The last question is about whether multinomial regression is the greatest approach. The multinomial regression is ideal to predict an unordered categorical variable, but not an ordered categorical variable, because it uses one category (in this case, “unchanged” as baseline). The interpretation for the coefficient would be “The log-odds of responding 'increase' (or 'decrease') vs 'not change' are the beta coefficient higher for categories one compared to the reference categories.” Initially, I thought “Increase”, “unchanged”, and “decrease” as unordered categorical variables, simply meaning they are viewed as separate categories, disregarding the sequence here.
- 
-The ordered categorical variable is similar to students’ grades, where A (90-100) is the highest, followed by B (80-90), C (70-80), and D (60-70). They are ordered categorical variables, but not numeric. Eugene doubted my approach to treating increases, unchanged, and decreases as unrelated. If we want to recover a trend rather than log likelihood, we will need to use a different regression model – the ordinal regression model. However, the multinomial regression results remain valid and may be helpful in the future.  
+
+The ordered categorical variable is similar to students’ grades, where A (90-100) is the highest, followed by B (80-90), C (70-80), and D (60-70). They are ordered categorical variables, but not numeric. Eugene doubted my approach to treating increases, unchanged, and decreases as unrelated. If we want to recover a trend rather than log likelihood, we will need to use a different regression model – the ordinal regression model. However, the multinomial regression results remain valid and may be helpful in the future.
