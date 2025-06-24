@@ -1714,6 +1714,9 @@ kable(
 
 ### Results
 
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+
 ## P100: Public spaces
 
 ### Question:
@@ -1923,6 +1926,13 @@ kable(
   )
 ```
 
+### Results
+
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- 
+
+
 ## P101: New housing projects
 
 ### Question:
@@ -2131,6 +2141,26 @@ kable(
   )
 ```
 
+### Results
+
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- **population number** (`P3`): For every one additional person in household, the odds of responding "increase" than "no change" **decreased by 9.5% for every additional person in the household,** with holding other variables constant.
+- **personal Vehicle** (`P42`): People who use personal vehicle as their major transportation mode before 2020 have 52.8% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **transit** (`P42`): People who use public transit as their major transportation mode before 2020 have 33.8% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **taxi** (`P42`): People who use taxi as their major transportation mode before 2020 have 66.4% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-high** (`P50`): People with high income have 1.16 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **income-upper-mid** (`P50`): People with upper-mid income have 1.033 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **income-lower-mid** (`P50`): People with lower-mid income have 1.332 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **income-low** (`P50`): People with low income have 97.7% higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **edu lower secondary** (`P12`): People with lower secondary education have 50% higher odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+
+#### **significant factor (variables) in choice two (not change) vs choice three (decrease)**:
+
+- **Income-low** (`P50`): People with low income have 1.906 times higher odds of choosing "not change" than "decrease" compared to people with not report their income, with holding other variables constant.
+- **employed** (`P14`): People who are employed have 59.1% lower odds of choosing "not change" than "decrease" compared to people who are unemployed, with holding other variables constant.
+- **age5** (`Edad`): People who are within `age5` have 1.5 times higher odds of choosing "not change" than "decrease" compared to people who are 18-25 years old, with holding other variables constant.
+- **live-time-long** (`P83`): People who have lived in their current residence for a long time have 1.216 times higher odds of choosing "not change" than "decrease" compared to people who have lived in their current residence for a medium time, with holding other variables constant.
 
 # Limitation and Questions
 
