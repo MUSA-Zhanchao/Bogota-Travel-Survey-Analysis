@@ -81,7 +81,7 @@ $$
 There are three key assumptions for multinomial regression:
 
 - **Independence of Irrelevant Alternatives (IIA)**: the odds between any two outcome categories do not depend on other alternatives. For example, the odds of people choosing to see increase or are influenced by options like “not change” and “decrease” present.
-- **Independence observations**: We assume each individual person in our cases responded to the survey directly without being influenced by others who took the survey.
+- **Independent observations**: We assume each individual person in our cases responded to the survey directly without being influenced by others who took the survey.
 - **No perfect multicollinearity** among predictors
 
 ## Sample Interpretation
