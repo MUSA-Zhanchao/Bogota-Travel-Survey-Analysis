@@ -1258,6 +1258,20 @@ kable(
 
 #### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
 
+- **public transit** (`P42`): People who use public transit as their major transportation mode before 2020 have 41.8% higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **walking** (`P42`): People who walk as their major transportation mode before 2020 have 60.1% higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-high** (`P50`): People with high income have 2.432 times higher odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-primary** (`P12`): People with primary education have 42.4% lower odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.
+- **age 4** (`Edad`): People aged 4 have 40.4% lower odds of choosing "increase" than "not change" compared to people aged 18-24, with holding other variables constant.
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **informal transportation** (`P42`): People who use informal transportation as their major transportation mode before 2020 have 8.335 higher odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-low** (`P50`): People with low income have 51.6% lower odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.
+- **occupation employed** (`P14`): People who are employed (formal job) have 53.2% lower odds of choosing "decrease" than "not change" compared to people who are unemployed, with holding other variables constant.
+- **age5** (`Edad`): People aged 50-64 have 54.1% lower odds of choosing "decrease" than "not change" compared to people aged 18-24, with holding other variables constant.
+
+
 
 ## P96: Travel time
 
@@ -1468,6 +1482,27 @@ kable(
   )
 ```
 
+### Results
+
+#### **significant factor (variables) in choice one (increase) vs choice two (not change)**:
+
+- **population number** (`P3`): For every one additional person in household, the odds of responding "increase" than "no change" **increase by 18.9% for every additional person in the household,** with holding other variables constant.
+- **motorcycle** (`P42`): People who use motorcycle as their major transportation mode before 2020 have 1.5 times higher odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **walking** (`P42`): People who walk as their major transportation mode before 2020 have 57.9% lower odds of choosing "increase" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income-upper-mid** (`P50`): People with upper-mid income have 47.5% lower odds of choosing "increase" than "not change" compared to people with not report their income, with holding other variables constant.
+- **education-lower secondary** (`P12`): People with lower secondary education have 37.2% lower odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.(*Note: p_values= 0.056*)
+- **education-primary** (`P12`): People with primary education have 39.8% lower odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant. (*Note: p_values= 0.092*)
+- **education-technological** (`P12`): People with technological education have 40.5% lower odds of choosing "increase" than "not change" compared to people with upper secondary education, with holding other variables constant.(*Note: p_values= 0.093*)
+
+#### **significant factor (variables) in choice three (decrease) vs choice two (not change)**:
+
+- **motorcycle** (`P42`): People who use motorcycle as their major transportation mode before 2020 have 1.3 times higher odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **walking** (`P42`): People who walk as their major transportation mode before 2020 have 44.3% higher odds of choosing "decrease" than "not change" compared to people who use other transportation modes, with holding other variables constant.
+- **income lower-mid** (`P50`): People with lower-mid income have 99.5% higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.
+- **self-employed** (`P14`): People who are self-employed have 35.1% lower odds of choosing "decrease" than "not change" compared to people who are unemployed, with holding other variables constant.
+- **student** (`P14`): People who are students have 47.5% lower odds of choosing "decrease" than "not change" compared to people who are unemployed, with holding other variables constant. (Including students in primary, high school, and university, which may make this unrealiable?)
+
+
 ## P98: Hearing pollution
 
 ### Question:
@@ -1676,6 +1711,8 @@ kable(
     full_width        = FALSE
   )
 ```
+
+### Results
 
 ## P100: Public spaces
 
