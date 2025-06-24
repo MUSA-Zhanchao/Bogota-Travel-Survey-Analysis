@@ -139,7 +139,7 @@ Since the primary purpose of the model is to identify different characteristics 
 
 Since all **housing type** (P1) are statistically significant, we will not include it in the model, since all housing type shows signals of (quasi-)perfect separation, indicate that the housing type is not a good predictor for the dependent variable.( maybe because there is no significant difference between people in different household answer the survey differently or sample size is too small.)
 
-## P87: Multinomial Regression
+## P87: Value of housing or rent
 
 ### Question:
 **"How do you think the value of the housing or rent in which you live will change after the inauguration of the First and Second Line of the Bogotá Metro?"**
@@ -366,7 +366,7 @@ kable(
 - **income_low** (`P50`): The log-odds of responding "decrease" rather than "not change" are 2.109 higher for people with low income compared to those with not report their income, with holding other variables constant. In other words, **people with low income have 724% higher odds of choosing "decrease" than "not change" compared to people with not report their income, with holding other variables constant.**  (*Potential concerning as the log-odds is very high, indicating that the sample size of this category is too small to draw any conclusion.*)
 - **live_time_long** (`P83`): The log-odds of responding "decrease" rather than "not change" are 1.099 lower for people who have lived in their current home for a long time compared to those who have lived in their current home for a medium time, with holding other variables constant. In other words, **people who have lived in their current home for a long time have 66.7% lower odds of choosing "decrease" than "not change" compared to people who have lived in their current home for a medium time, with holding other variables constant.**
 
-## P90: Multinomial Regression
+## P90: Safety in the neighborhood
 
 ### Question:
 We would like to know your perception of the possible impacts of the First and Second Line of the Bogotá Metro once it is inaugurated and in operation. Please indicate your perception of each of the following statements:
@@ -574,7 +574,10 @@ kable(
   )
 ```
 
-## P91: multinomial regression
+### Results
+
+
+## P91: Cost of living
 
 ### Question:
 
@@ -781,7 +784,10 @@ kable(
   )
 ```
 
-## P92: multinomial regression
+### Results
+
+
+## P92: Local commerce
 
 ### Question:
 
@@ -990,7 +996,7 @@ kable(
   )
 ```
 
-## P95: Multinomial regression
+## P95: Satisfaction with public transportation
 
 ### Question:
 
@@ -1197,7 +1203,7 @@ kable(
   )
 ```
 
-## P96: multinomial regression
+## P96: Travel time
 
 ### Question:
 
@@ -1406,7 +1412,7 @@ kable(
   )
 ```
 
-## P98: multinomial regression
+## P98: Hearing pollution
 
 ### Question:
 
@@ -1615,7 +1621,7 @@ kable(
   )
 ```
 
-## P100: multinomial regression
+## P100: Public spaces
 
 ### Question:
 
@@ -1824,7 +1830,7 @@ kable(
   )
 ```
 
-## P101: multinomial regression
+## P101: New housing projects
 
 ### Question:
 
