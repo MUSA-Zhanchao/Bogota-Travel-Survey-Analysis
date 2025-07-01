@@ -1,4 +1,6 @@
 # Bogotá Travel Survey Analysis: Multinomial Regression
+[![Software License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Zhanchao Yang
 
 Summer 2025
