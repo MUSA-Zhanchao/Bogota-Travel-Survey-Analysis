@@ -50,9 +50,6 @@ where:
 
 - $j_2$ is the second category (e.g., “decrease”) and “base” is the reference (e.g., “not change”)
 
-
----
-
 In short notation for all $j=1,\dots,J$:
 
 $$
