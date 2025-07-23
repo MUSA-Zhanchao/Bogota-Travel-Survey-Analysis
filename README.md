@@ -123,6 +123,8 @@ Since the primary purpose of the model is to identify different characteristics 
 
 Since all **housing type** (P1) are statistically significant, we will not include it in the model, since all housing type shows signals of (quasi-)perfect separation, indicate that the housing type is not a good predictor for the dependent variable.( maybe because there is no significant difference between people in different household answer the survey differently or sample size is too small.)
 
+Details in Markdown files!
+
 # Limitation
 
 The multinomial regression has three major limitations.  
