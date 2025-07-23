@@ -123,7 +123,7 @@ Since the primary purpose of the model is to identify different characteristics 
 
 Since all **housing type** (P1) are statistically significant, we will not include it in the model, since all housing type shows signals of (quasi-)perfect separation, indicate that the housing type is not a good predictor for the dependent variable.( maybe because there is no significant difference between people in different household answer the survey differently or sample size is too small.)
 
-Details in Markdown files!
+For detailed results and analysis, refer to the sections above and the accompanying Markdown files in the repository.
 
 # Limitation
 
