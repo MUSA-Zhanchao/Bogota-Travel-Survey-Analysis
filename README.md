@@ -127,9 +127,8 @@ Details in Markdown files!
 
 # Limitation
 
-The multinomial regression has three major limitations.  
-**1. Overgeneralization of respondents’ views.** The analysis treats the head‑of‑household’s opinions as if they represent every household member (and the full survey sample), undermining the validity of any inferences.  
-**2. Insufficient observations per category.** Maximum‑likelihood estimation in multinomial models generally requires at least 50 cases in each outcome category and for each additional predictors; our sample falls well short of that benchmark.  
-**3. Skewed outcome distribution.** Many of the perceiption questions has skewed outcome distributions, which most of the survey respondents answers to the same answer, leading to less covariant between dependent variable. For example, in the property‑value question, 70% of respondents reported “increased,” while only 10% reported “decreased.” Such imbalance can produce unstable coefficient estimates and make it difficult to achieve statistical significance.  
+The multinomial regression has three major limitations.
+**1. Overgeneralization of respondents’ views.** The analysis treats the head‑of‑household’s opinions as if they represent every household member (and the full survey sample), undermining the validity of any inferences.
+**2. Insufficient observations per category.** Maximum‑likelihood estimation in multinomial models generally requires at least 50 cases in each outcome category and for each additional predictors; our sample falls well short of that benchmark.
+**3. Skewed outcome distribution.** Many of the perceiption questions has skewed outcome distributions, which most of the survey respondents answers to the same answer, leading to less covariant between dependent variable. For example, in the property‑value question, 70% of respondents reported “increased,” while only 10% reported “decreased.” Such imbalance can produce unstable coefficient estimates and make it difficult to achieve statistical significance.
 Overall, these issues mean the results are best viewed as preliminary, exploratory findings—not as definitive, scientifically robust conclusions.
-
